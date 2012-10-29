@@ -515,7 +515,7 @@ class EventProtocol(EventSocket):
         """
         return self.__protocolSendmsg("endless_playback", filename, lock=True)
 
-    def execute(self, command, args, uuid=''):
+    def execute(self, command, args, uuid=None):
         """Please refer to http://wiki.freeswitch.org/wiki/Event_Socket_Library#execute
 
         >>> execute('voicemail', 'default $${domain} 1000')
